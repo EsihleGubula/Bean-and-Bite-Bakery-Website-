@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmation | Bean & Bite Bakery</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Bean & Bite Bakery</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ORDER CONFIRMATION -->
+        <section class="order-confirmation">
+
+            <div class="confirmation-box">
+
+                <div class="confirmation-icon">
+                    ✅
+                </div>
+
+                <h2>Order Confirmed!</h2>
+
+                <p class="thank-you">
+                    🎉 Thank you for ordering from
+                    Bean & Bite Bakery!
+                </p>
+
+                <p>
+                    Your order has been received successfully.
+                    We are getting your freshly baked products
+                    ready for collection.
+                </p>
+
+
+                <!-- ORDER NUMBER -->
+                <div class="order-number">
+
+                    <h3>🧾 Order Number</h3>
+
+                    <p>
+                        <strong>#BB2026-001</strong>
+                    </p>
+
+                </div>
+
+
+                <!-- ORDER DETAILS -->
+                <div class="confirmation-details">
+
+                    <h3>🥐 Order Details</h3>
+
+                    <!-- SELECTED PRODUCTS WILL APPEAR HERE -->
+                    <div id="confirmation-items">
+
+                    </div>
+
+                    <hr>
+
+                    <p>
+                        <strong>
+                            Total: R<span id="confirmation-total">0.00</span>
+                        </strong>
+                    </p>
+
+                </div>
+
+
+                <!-- COLLECTION INFORMATION -->
+                <div class="collection-info">
+
+                    <h3>🛍️ Collection Information</h3>
+
+                    <p>
+                        Your order will be available for collection
+                        at Bean & Bite Bakery.
+                    </p>
+
+                    <p>
+                        📍 24 Brick Lane, Woodstock, Cape Town
+                    </p>
+
+                    <p>
+                        🕘 Monday – Friday: 09:00 – 17:00
+                    </p>
+
+                    <p>
+                        🕘 Saturday: 09:00 – 13:00
+                    </p>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="confirmation-contact">
+
+                    <p>
+                        📧 Questions about your order?
+                    </p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:beanandbitebakery@gmail.co.za">
+                            beanandbitebakery@gmail.co.za
+                        </a>
+                    </p>
+
+                    <p>
+                        📞 021 326 9990
+                    </p>
+
+                </div>
+
+
+                <!-- BACK TO HOME -->
+                <a
+                    href="index.html"
+                    class="back-home-button"
+                      onclick="localStorage.removeItem('cart'); localStorage.removeItem('discountApplied');">
+
+
+                    🏠 Back to Home
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Bean & Bite Bakery. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/javascript.js"></script>
+
+</body>
+
+</html>

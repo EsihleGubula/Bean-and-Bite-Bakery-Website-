@@ -1,0 +1,1348 @@
+/* Bean & Bite Bakery - Home Page */
+
+body {
+    margin: 0;
+    background-color: #FDFBF7;
+    color: #2B2927;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Navigation */
+nav a {
+    color: #FDFBF7;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #D9A773;
+}
+
+/* Banner */
+.banner {
+    background-color: #FDFBF7;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.banner-content {
+    flex: 1;
+}
+
+.banner h2 {
+    color: #4A2E1B;
+    font-size: 40px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.banner a {
+    display: inline-block;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 12px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner a:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+/* Banner Image */
+.banner-image {
+    flex: 1;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Bestsellers */
+.bestsellers {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.bestsellers h2,
+.promotions h2,
+.newsletter h2 {
+    color: #4A2E1B;
+}
+
+.product {
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+    vertical-align: top;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Promotions */
+.promotions {
+    background-color: #D9A773;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.promotions a {
+    display: inline-block;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #FDFBF7;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+/* Footer */
+footer {
+    background-color: #2B2927;
+    color: #FDFBF7;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   ABOUT US PAGE
+   ========================= */
+
+.our-story,
+.founders-journey,
+.ingredient-sourcing,
+.mission,
+.vision {
+    padding: 60px 10%;
+    background-color: #FDFBF7;
+}
+
+.our-story h2,
+.founders-journey h2,
+.ingredient-sourcing h2,
+.mission h2,
+.vision h2 {
+    color: #4A2E1B;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.our-story p,
+.founders-journey p,
+.ingredient-sourcing p,
+.mission p,
+.vision p {
+    color: #2B2927;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 900px;
+}
+
+
+/* Founder's Journey */
+.founders-journey {
+    background-color: #D9A773;
+}
+
+
+/* Mission */
+.mission {
+    background-color: #FDFBF7;
+}
+
+
+/* Vision */
+.vision {
+    background-color: #D9A773;
+}
+
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+/* Products Introduction */
+.products-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #FDFBF7;
+}
+
+.products-intro h2 {
+    color: #4A2E1B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.products-intro p {
+    color: #2B2927;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Product Sections */
+.coffee-menu,
+.pastry-catalogue,
+.sourdough-orders {
+    padding: 70px 8%;
+    background-color: #FDFBF7;
+}
+
+.coffee-menu h2,
+.pastry-catalogue h2,
+.sourdough-orders h2 {
+    text-align: center;
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Product Cards */
+.product-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* Product Images */
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Product Names */
+.product-card h3 {
+    color: #4A2E1B;
+    font-size: 22px;
+    margin: 20px 15px 10px;
+}
+
+
+/* Product Description */
+.product-card p {
+    color: #2B2927;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+
+/* Prices */
+.product-card .price {
+    color: #4A2E1B;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+/* Buttons */
+.product-card button {
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* Pastry Section */
+.pastry-catalogue {
+    background-color: #D9A773;
+}
+
+
+/* Sourdough Section */
+.sourdough-orders {
+    background-color: #FDFBF7;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-intro h2 {
+        font-size: 34px;
+    }
+
+    .coffee-menu h2,
+    .pastry-catalogue h2,
+    .sourdough-orders h2 {
+        font-size: 28px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+}
+/* =========================
+   GALLERY PAGE
+========================= */
+
+/* Gallery Introduction */
+.gallery-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #FDFBF7;
+}
+
+.gallery-intro h2 {
+    color: #4A2E1B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.gallery-intro p {
+    color: #2B2927;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Gallery Sections */
+.photo-gallery,
+.behind-scenes,
+.customer-moments,
+.bakery-interior {
+    padding: 70px 8%;
+}
+
+
+/* Section Backgrounds */
+.photo-gallery {
+    background-color: #FDFBF7;
+}
+
+.behind-scenes {
+    background-color: #D9A773;
+}
+
+.customer-moments {
+    background-color: #FDFBF7;
+}
+
+.bakery-interior {
+    background-color: #D9A773;
+}
+
+
+/* Section Headings */
+.photo-gallery h2,
+.behind-scenes h2,
+.customer-moments h2,
+.bakery-interior h2 {
+    text-align: center;
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+
+/* Section Paragraphs */
+.behind-scenes > p,
+.customer-moments > p,
+.bakery-interior > p {
+    text-align: center;
+    color: #2B2927;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Gallery Items */
+.gallery-item {
+    background-color: #FDFBF7;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.15);
+}
+
+
+/* Gallery Images */
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+
+/* Image Hover Effect */
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   MOBILE GALLERY
+========================= */
+
+@media (max-width: 768px) {
+
+    .gallery-intro h2 {
+        font-size: 34px;
+    }
+
+    .photo-gallery h2,
+    .behind-scenes h2,
+    .customer-moments h2,
+    .bakery-interior h2 {
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+}
+/* =========================
+   CONTACT PAGE
+========================= */
+
+/* Contact Introduction */
+.contact-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #FDFBF7;
+}
+
+.contact-intro h2 {
+    color: #4A2E1B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    color: #2B2927;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* =========================
+   LOCATIONS
+========================= */
+
+.locations-section {
+    padding: 70px 8%;
+    background-color: #D9A773;
+}
+
+.locations-section h2 {
+    text-align: center;
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Location Cards */
+.location-card {
+    background-color: #FDFBF7;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.15);
+}
+
+.location-card h3 {
+    color: #4A2E1B;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.location-card h4 {
+    color: #4A2E1B;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    color: #2B2927;
+    line-height: 1.7;
+}
+
+
+/* Directions Button */
+.directions-button {
+    display: inline-block;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.directions-button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-section {
+    padding: 70px 8%;
+    background-color: #FDFBF7;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.map-section p {
+    color: #2B2927;
+    line-height: 1.7;
+}
+
+.map-container {
+    max-width: 1100px;
+    margin: 35px auto 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    display: block;
+}
+
+.map-note {
+    font-size: 14px;
+}
+
+
+/* =========================
+   OPENING HOURS
+========================= */
+
+.location-hours {
+    padding: 60px 8%;
+    background-color: #D9A773;
+    text-align: center;
+}
+
+.location-hours h2 {
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.location-hours p {
+    color: #2B2927;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+
+/* =========================
+   INQUIRY FORM
+========================= */
+
+.inquiry-form {
+    padding: 70px 8%;
+    background-color: #FDFBF7;
+}
+
+.inquiry-form h2 {
+    text-align: center;
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.inquiry-form form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-form label {
+    color: #4A2E1B;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D9A773;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: #2B2927;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.inquiry-form textarea {
+    resize: vertical;
+}
+
+.inquiry-form button {
+    margin-top: 25px;
+    padding: 14px;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.inquiry-form button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* =========================
+   CATERING
+========================= */
+
+.catering {
+    padding: 70px 10%;
+    background-color: #D9A773;
+    text-align: center;
+}
+
+.catering h2 {
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.catering p {
+    color: #2B2927;
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+.catering a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.catering a:hover {
+    background-color: #FDFBF7;
+    color: #4A2E1B;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    padding: 60px 8%;
+    background-color: #FDFBF7;
+    text-align: center;
+}
+
+.contact-details h2 {
+    color: #4A2E1B;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.contact-details p {
+    color: #2B2927;
+    margin: 12px 0;
+}
+
+.contact-details a {
+    color: #4A2E1B;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: #D9A773;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social-media {
+    padding: 60px 8%;
+    background-color: #4A2E1B;
+    text-align: center;
+}
+
+.social-media h2 {
+    color: #D9A773;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.social-media p {
+    color: #FDFBF7;
+    line-height: 1.7;
+}
+
+.social-media a {
+    color: #D9A773;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.social-media a:hover {
+    color: #FDFBF7;
+}
+
+
+/* =========================
+   MOBILE CONTACT PAGE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-intro h2 {
+        font-size: 34px;
+    }
+
+    .locations {
+        grid-template-columns: 1fr;
+    }
+
+    .locations-section h2,
+    .map-section h2,
+    .location-hours h2,
+    .inquiry-form h2,
+    .catering h2,
+    .contact-details h2,
+    .social-media h2 {
+        font-size: 28px;
+    }
+
+    .location-card {
+        padding: 25px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+/* =========================================
+   CART PAGE
+========================================= */
+
+.cart-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #FDFBF7;
+}
+
+.cart-intro h2 {
+    color: #4A2E1B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cart-intro p {
+    color: #2B2927;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Cart Section */
+
+.cart-section {
+    padding: 60px 8%;
+    background-color: #FDFBF7;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Cart Items */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.12);
+}
+
+.cart-item img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    color: #4A2E1B;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cart-item-details p {
+    color: #2B2927;
+}
+
+.cart-item-details label {
+    color: #4A2E1B;
+    font-weight: bold;
+}
+
+.cart-item-details input {
+    width: 60px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #D9A773;
+    border-radius: 5px;
+}
+
+
+/* Remove Button */
+
+.cart-item-details button {
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item-details button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* Cart Summary */
+
+.cart-summary {
+    background-color: #D9A773;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: right;
+    margin-top: 35px;
+}
+
+.cart-summary h2 {
+    color: #4A2E1B;
+}
+
+.cart-summary p {
+    color: #2B2927;
+    font-size: 17px;
+}
+
+.checkout-button {
+    display: inline-block;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.checkout-button:hover {
+    background-color: #FDFBF7;
+    color: #4A2E1B;
+}
+
+
+/* =========================================
+   CHECKOUT PAGE
+========================================= */
+
+.checkout-intro {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #FDFBF7;
+}
+
+.checkout-intro h2 {
+    color: #4A2E1B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.checkout-intro p {
+    color: #2B2927;
+    font-size: 17px;
+}
+
+
+/* Checkout Layout */
+
+.checkout-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #FDFBF7;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Customer Details */
+
+.customer-details {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(43, 41, 39, 0.12);
+}
+
+.customer-details h2 {
+    color: #4A2E1B;
+    margin-bottom: 25px;
+}
+
+.customer-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-details label {
+    color: #4A2E1B;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.customer-details input,
+.customer-details select,
+.customer-details textarea {
+    padding: 13px;
+    border: 1px solid #D9A773;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.customer-details textarea {
+    resize: vertical;
+}
+
+
+/* Payment */
+
+.customer-details input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+
+/* Place Order */
+
+.place-order-button {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* Order Summary */
+
+.checkout-summary {
+    background-color: #D9A773;
+    padding: 30px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.checkout-summary h2 {
+    color: #4A2E1B;
+    margin-bottom: 25px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    color: #2B2927;
+}
+
+.summary-total {
+    color: #2B2927;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   ORDER CONFIRMATION PAGE
+========================================= */
+
+.order-confirmation {
+    background-color: #FDFBF7;
+    padding: 80px 8%;
+    min-height: 70vh;
+}
+
+.confirmation-box {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(43, 41, 39, 0.15);
+}
+
+
+/* Confirmation Icon */
+
+.confirmation-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+/* Confirmation Heading */
+
+.confirmation-box h2 {
+    color: #4A2E1B;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.confirmation-box p {
+    color: #2B2927;
+    line-height: 1.7;
+}
+
+.thank-you {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* Order Number */
+
+.order-number {
+    background-color: #D9A773;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.order-number h3 {
+    color: #4A2E1B;
+}
+
+.order-number p {
+    font-size: 20px;
+}
+
+
+/* Confirmation Details */
+
+.confirmation-details {
+    padding: 25px;
+    border: 1px solid #D9A773;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.confirmation-details h3 {
+    color: #4A2E1B;
+}
+
+.confirmation-details hr {
+    border: none;
+    border-top: 1px solid #D9A773;
+    margin: 20px 0;
+}
+
+
+/* Collection Information */
+
+.collection-info {
+    background-color: #FDFBF7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.collection-info h3 {
+    color: #4A2E1B;
+}
+
+
+/* Confirmation Contact */
+
+.confirmation-contact {
+    margin-bottom: 30px;
+}
+
+.confirmation-contact a {
+    color: #4A2E1B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Back Home Button */
+
+.back-home-button {
+    display: inline-block;
+    background-color: #4A2E1B;
+    color: #FDFBF7;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.back-home-button:hover {
+    background-color: #D9A773;
+    color: #2B2927;
+}
+
+
+/* =========================================
+   MOBILE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .cart-intro h2,
+    .checkout-intro h2 {
+        font-size: 34px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .cart-summary {
+        text-align: center;
+    }
+
+    .checkout-section {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+
+    .customer-details {
+        padding: 25px;
+    }
+
+    .checkout-summary {
+        order: -1;
+    }
+
+    .confirmation-box {
+        padding: 30px 20px;
+    }
+
+    .confirmation-box h2 {
+        font-size: 32px;
+    }
+
+}
+.checkout-button {
+    display: inline-block !important;
+    background-color: #4A2E1B !important;
+    color: #FDFBF7 !important;
+    padding: 15px 25px !important;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.Pre-Order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A2E1B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Pre-Order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A2E1B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Pre-Order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A2E1B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Pre-Order-button:hover {
+    opacity: 0.8;
+}
