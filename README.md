@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Bean & Bite Bakery is a responsive bakery website created for a fictional artisan bakery established by childhood friends Maya and Liam. The bakery combines traditional artisan baking techniques with a modern and welcoming café environment.
+Bean & Bite Bakery is a responsive bakery website created for a fictional artisan bakery established by childhood friends Maya and Liam. The bakery combines traditional artisan baking techniques with a modern and welcoming café environment.markd
 
 The website allows customers to explore Bean & Bite Bakery, view bakery products, learn about the bakery and its founders, find contact and location information, and place products into an online shopping cart. The website also includes a checkout and order confirmation flow.
 
@@ -151,18 +151,29 @@ The mobile layout was tested using an iPhone device view. The navigation, images
 
 ## Responsive Testing Evidence
 
-Screenshots were captured during responsive testing and are included with the project submission.
+## Responsive Testing Evidence
 
-The following tests were completed:
+Screenshots were captured during responsive testing and are included below as evidence of testing across different screen sizes.
 
-| Test         | Device/View        | Result |
-| ------------ | ------------------ | ------ |
-| Desktop Test | Desktop browser    | Passed |
-| Tablet Test  | iPad Mini – 768px  | Passed |
-| Mobile Test  | iPhone device view | Passed |
+### Desktop Test
+
+![Desktop Test](screenshots/desktop-test.png)
+
+### Tablet Test
+
+![Tablet Test](screenshots/tablet-test.png)
+
+### Mobile Test
+
+![Mobile Test](screenshots/mobile-test.png)
+
+| Test | Device/View | Result |
+|---|---|---|
+| Desktop Test | Desktop browser | Passed |
+| Tablet Test | iPad Mini – 768px | Passed |
+| Mobile Test | iPhone device view | Passed |
 
 The responsive tests confirmed that the website content remained visible, readable and correctly positioned across the tested screen sizes.
-
 ## Technical Requirements
 
 The proposed technical architecture includes:
