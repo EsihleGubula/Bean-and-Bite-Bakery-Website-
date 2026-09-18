@@ -4,7 +4,7 @@
 
 Bean & Bite Bakery is a responsive bakery website created for a fictional artisan bakery established by childhood friends Maya and Liam. The bakery combines traditional artisan baking techniques with a modern and welcoming café environment.
 
-The website allows customers to explore Bean & Bite Bakery, view products and menus, learn about the bakery and its founders, find contact and location information, and place products into an online shopping cart. The website also includes a checkout and order confirmation flow.
+The website allows customers to explore Bean & Bite Bakery, view bakery products, learn about the bakery and its founders, find contact and location information, and place products into an online shopping cart. The website also includes a checkout and order confirmation flow.
 
 The website focuses on artisan sourdough, seasonal pastries and specialty coffee while promoting fresh, locally sourced ingredients, sustainability and community.
 
@@ -20,6 +20,7 @@ The main goals of the website are to:
 * Provide information about the bakery, its founders and its values.
 * Help customers find the bakery through its location and opening hours.
 * Encourage customers to subscribe to the bakery newsletter.
+* Provide a responsive website experience across desktop, tablet and mobile screen sizes.
 
 ## Target Audience
 
@@ -34,26 +35,25 @@ The website is aimed at:
 
 ## Website Pages
 
-The Bean & Bite Bakery website includes the following pages and sections:
+The Bean & Bite Bakery website includes the following pages:
 
 1. **Home** – Introduces the bakery, highlights products and provides links to important actions.
 2. **About Us** – Explains the bakery's history, founders, mission, vision and ingredient sourcing.
 3. **Products** – Displays the bakery's available products.
-4. **Coffee Menu** – Presents the specialty coffee selection.
-5. **Pastry Catalog** – Showcases seasonal pastries and baked goods.
-6. **Gallery** – Displays images representing the bakery and its products.
-7. **Contact Us** – Provides location, opening hours and contact information.
-8. **Cart / Checkout / Confirmation** – Provides the online purchasing flow from product selection through checkout and order confirmation.
+4. **Gallery** – Displays images representing the bakery and its products.
+5. **Contact Us** – Provides location, opening hours and contact information.
+6. **Cart** – Allows customers to review selected products and quantities.
+7. **Checkout** – Provides the checkout process for completing an order.
+8. **Order Confirmation** – Confirms that the customer's order has been completed.
 
 ## Key Features
 
 * Responsive website layout
-* Mobile-friendly navigation
-* Sticky navigation bar
+* Mobile-friendly layout
+* Clear navigation
 * Bakery product sections
-* Coffee menu
-* Seasonal pastry catalogue
-* Product filtering options
+* Coffee and pastry content
+* Product browsing
 * Shopping cart functionality
 * Quantity controls
 * Checkout process
@@ -64,6 +64,9 @@ The Bean & Bite Bakery website includes the following pages and sections:
 * Location and directions
 * Interactive map
 * Consistent branding across all pages
+* Responsive images
+* Responsive layouts for desktop, tablet and mobile devices
+* Hover, focus and active states for interactive elements
 
 ## Technologies Used
 
@@ -73,11 +76,11 @@ HTML5 was used to create the structure and semantic content of the website. The 
 
 ### CSS3
 
-CSS3 was used to create the visual design of Bean & Bite Bakery. It was used for colours, typography, layouts, spacing, buttons, cards and responsive design.
+CSS3 was used to create the visual design of Bean & Bite Bakery. It was used for colours, typography, layouts, spacing, buttons, cards, responsive design and visual effects.
 
 ### JavaScript
 
-JavaScript was used to provide interactive functionality throughout the website. This includes shopping cart functionality, navigation interactions and other interactive website elements.
+JavaScript was used to provide interactive functionality throughout the website, including shopping cart functionality, navigation interactions and other interactive website elements.
 
 ## Design and Branding
 
@@ -92,14 +95,11 @@ The website uses a warm bakery-inspired visual identity based on coffee, pastrie
 | Soft Cream/Oatmeal      | `#FDFBF7` | Main website background                  |
 | Charcoal Black          | `#2B2927` | Main body text                           |
 
+The existing Bean & Bite Bakery colour palette was maintained during Part 2 to keep the website visually consistent with the original design.
+
 ### Typography
 
-The design combines serif headings with clean sans-serif body text.
-
-* **Headings:** Playfair Display or Lora
-* **Body text:** Inter or DM Sans
-
-Google Fonts was used as a reference for the typography choices (Google, 2024).
+The website uses a clean and readable typography system. CSS typography properties were applied to establish consistent font sizing, line height, font weight and letter spacing throughout the website.
 
 ## User Experience
 
@@ -111,7 +111,57 @@ The ordering process follows a straightforward flow:
 
 **Products → Cart → Checkout → Order Confirmation**
 
-The design also uses clear buttons, readable text and a consistent colour scheme to help customers understand where to click and how to navigate the website.
+The design also uses clear buttons, readable text, consistent spacing and a consistent colour scheme to help customers understand where to click and how to navigate the website.
+
+## Part 2 CSS Development
+
+During Part 2, the website's existing design was improved using an external CSS stylesheet.
+
+The following CSS improvements were implemented:
+
+* Added a CSS reset using the universal selector.
+* Added consistent default font size.
+* Added line-height for improved readability.
+* Added font weight and letter spacing to the base typography.
+* Used Flexbox to improve the layout of the Bestsellers section.
+* Used Flexbox properties including `display`, `flex-wrap`, `justify-content`, `align-items` and `gap`.
+* Continued using CSS Grid for product and gallery layouts.
+* Added focus states to form controls and buttons.
+* Added an active state to buttons and links.
+* Added a tablet breakpoint for screen widths between 769px and 1024px.
+* Added responsive image rules using `max-width: 100%` and `height: auto`.
+* Converted selected fixed pixel values to relative `rem` units for improved scalability.
+* Maintained the original Bean & Bite Bakery colour palette and overall visual design.
+
+## Responsive Design
+
+The website was tested across desktop, tablet and mobile screen sizes.
+
+### Desktop
+
+The desktop layout was tested using the normal browser view. The navigation, content sections, images, product layouts and footer were checked for correct display.
+
+### Tablet
+
+The tablet layout was tested using the iPad Mini device view at 768px. The navigation, images, text and responsive layouts were checked to ensure that content did not overlap or extend outside the screen.
+
+### Mobile
+
+The mobile layout was tested using an iPhone device view. The navigation, images, text, product sections and other content were checked to ensure that the website remained readable and usable on a smaller screen.
+
+## Responsive Testing Evidence
+
+Screenshots were captured during responsive testing and are included with the project submission.
+
+The following tests were completed:
+
+| Test         | Device/View        | Result |
+| ------------ | ------------------ | ------ |
+| Desktop Test | Desktop browser    | Passed |
+| Tablet Test  | iPad Mini – 768px  | Passed |
+| Mobile Test  | iPhone device view | Passed |
+
+The responsive tests confirmed that the website content remained visible, readable and correctly positioned across the tested screen sizes.
 
 ## Technical Requirements
 
@@ -153,24 +203,21 @@ Bean-Bite-Bakery/
 ├── index.html
 ├── about.html
 ├── products.html
-├── coffee.html
-├── pastries.html
 ├── gallery.html
 ├── contact.html
 ├── cart.html
 ├── checkout.html
-├── confirmation.html
+├── order-confirmation.html
 │
-├── css/
+├── CSS/
 │   └── style.css
 │
-├── js/
-│   └── script.js
+├── MEDIA/
+│   └── website images
 │
-├── images/
-│   └── website-images
+├── README.md
 │
-└── README.md
+└── JavaScript files
 ```
 
 ## How to Run the Website
@@ -189,16 +236,52 @@ Hosting services such as Hostinger and SiteGround were considered when planning 
 
 ## Project Timeline
 
-| Week   | Project Stage                  |
-| ------ | ------------------------------ |
-| Week 1 | Project Proposal & Research    |
-| Week 2 | Website Structure & Planning   |
-| Week 3 | HTML Development & Integration |
-| Week 4 | Testing, GitHub & Submission   |
+| Week   | Project Stage                             |
+| ------ | ----------------------------------------- |
+| Week 1 | Project Proposal & Research               |
+| Week 2 | Website Structure & Planning              |
+| Week 3 | HTML Development & Integration            |
+| Week 4 | CSS Styling, Responsive Design & Testing  |
+| Week 5 | GitHub, README Documentation & Submission |
 
 ## Changelog
 
-### Version 1.0 – Phase 1
+### Version 2.0 – Part 2
+
+#### CSS Styling
+
+* Added a CSS reset to remove default browser margin and padding.
+* Added `box-sizing: border-box` to improve layout control.
+* Added base font size, line height, font weight and letter spacing.
+* Improved the Bestsellers layout using Flexbox.
+* Added Flexbox wrapping, alignment and spacing.
+* Continued using CSS Grid for product and gallery layouts.
+* Added focus states for inputs, textareas, select elements and buttons.
+* Added active states for buttons and links.
+* Added a tablet media query for screen widths between 769px and 1024px.
+* Added responsive image styling using `max-width: 100%` and `height: auto`.
+* Converted selected fixed pixel measurements to `rem` units.
+* Added CSS comments to organise the stylesheet into sections.
+
+#### Part 1 Feedback Corrections
+
+The following corrections from Part 1 feedback were completed:
+
+* Corrected broken image paths in `gallery.html`.
+* Corrected the broken pastry box image path in `products.html`.
+* Added the missing closing `</div>` element in `gallery.html`.
+* Checked the website file naming convention and maintained lowercase filenames with hyphens where applicable.
+* Continued using an external CSS stylesheet for the website styling.
+
+#### Responsive Testing
+
+* Tested the website on a desktop browser.
+* Tested the website using an iPad Mini at 768px.
+* Tested the website using an iPhone mobile device view.
+* Checked navigation, images, text, product sections and page layout at different screen sizes.
+* Captured screenshots as evidence of responsive testing.
+
+### Version 1.0 – Part 1
 
 * Created the Bean & Bite Bakery website concept.
 * Developed the website structure and navigation.
@@ -219,7 +302,7 @@ Hosting services such as Hostinger and SiteGround were considered when planning 
 
 Cloudflare (2026) *Content Delivery Network (CDN) Services*. Available at: https://www.cloudflare.com
 
-Google (2024) *Get Started with Google Fonts API*. Available at: Google Fonts API documentation
+Google (2024) *Google Fonts*. Available at: https://fonts.google.com
 
 Hostinger (2026) *Web Hosting Plans and Pricing*. Available at: https://www.hostinger.com
 
@@ -231,8 +314,8 @@ SiteGround (2026) *Web Hosting Services and Pricing*. Available at: https://www.
 
 **Name:** Esihle Gubula
 **Student Number:** ST10519904
-**Subject Code:** WED5020
+**Subject Code:** WEDE5020POE
 **Subject:** Introduction to Web Development
 **Project:** Bean & Bite Bakery
-**Phase:** Phase 1
+**Phase:** Phase 2
 **Year:** 2026
