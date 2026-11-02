@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Bean & Bite Bakery</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Bean & Bite Bakery</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- CHECKOUT INTRODUCTION -->
+        <section class="checkout-intro">
+
+            <h2>💳 Checkout</h2>
+
+            <p>
+                Complete your details below to place your
+                Bean & Bite Bakery order.
+            </p>
+
+        </section>
+
+
+        <!-- CHECKOUT CONTENT -->
+        <section class="checkout-section">
+
+            <!-- CUSTOMER DETAILS -->
+            <div class="customer-details">
+
+                <h2>👤 Customer Details</h2>
+
+                <form action="order-confirmation.html" method="post">
+
+                    <label for="full-name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        placeholder="Enter your full name"
+                        required>
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required>
+
+
+                    <label for="order-option">
+                        Order Option
+                    </label>
+
+                    <select
+                        id="order-option"
+                        name="order-option"
+                        required>
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="collection">
+                            🛍️ Store Collection
+                        </option>
+
+                    </select>
+
+
+                    <label for="notes">
+                        Order Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="5"
+                        placeholder="Add any special instructions..."></textarea>
+
+
+                    <!-- PAYMENT -->
+                    <h2>💰 Payment</h2>
+
+                    <p>
+                        Secure payment options will be available
+                        when online payment functionality is added.
+                    </p>
+
+                    <div class="payment-option">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                required>
+
+                            💳 Card Payment
+                        </label>
+
+                    </div>
+
+
+                    <!-- PLACE ORDER -->
+                    <button
+                        type="submit"
+                        class="place-order-button">
+
+                        ✅ Place Order
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="checkout-summary">
+
+                <h2>🧾 Order Summary</h2>
+
+                <div id="checkout-items"></div>
+
+                <!-- PRODUCTS WILL APPEAR HERE AUTOMATICALLY -->
+                <div id="checkout-items">
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- DISCOUNT -->
+                <div class="discount-section">
+
+                    <h3>🎁 New Member Discount</h3>
+
+                    <p>
+                        New newsletter members receive 10% off
+                        their first order.
+                    </p>
+
+                    <input
+                        type="text"
+                        id="discount-code"
+                        placeholder="Enter discount code">
+
+                    <button
+                        type="button"
+                        onclick="applyDiscount()">
+
+                        Apply Discount
+
+                    </button>
+
+                    <p id="discount-message"></p>
+
+                </div>
+
+
+                <!-- SUMMARY TOTAL -->
+                <div class="summary-total">
+
+                    <p>
+                        <strong>Subtotal:</strong>
+                        R<span id="subtotal">0.00</span>
+                    </p>
+
+                    <p>
+                        <strong>Discount:</strong>
+                        R<span id="discount-amount">0.00</span>
+                    </p>
+
+                    <p>
+                        <strong>Total:</strong>
+                        R<span id="final-total">0.00</span>
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Bean & Bite Bakery. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/javascript.js"></script>
+
+</body>
+
+</html>
