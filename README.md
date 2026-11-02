@@ -325,9 +325,3 @@ SiteGround (2026) *Web Hosting Services and Pricing*. Available at: https://www.
 
 **Name:** Esihle Gubula
 
-Part 2 corrects before Part 3
-
-- Corrected broken image paths in `gallery.html`.
-- Updated the preparation image path to `../MEDIA/prepare.jpg`.
-- Corrected the customer coffee image path to `../MEDIA/coffee drinking.jpg`.
-- Fixed the customer enjoyment image path to `../MEDIA/customer enjoy.jpg`.
