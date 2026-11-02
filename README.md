@@ -555,6 +555,7 @@ SiteGround (2026) *Web Hosting Services and Pricing*. Available at: https://www.
 
 Formspree (n.d.) *Formspree – Form Backend Platform*. Available at: https://formspree.io/
 
+<<<<<<< HEAD
 MailerLite (n.d.) *Email Marketing Platform*. Available at: https://www.mailerlite.com/
 
 STUDENT INFORMATION 
@@ -562,3 +563,7 @@ Name: Esihle Gubula
 Student Number: ST10519904
 Project: Bean & Bite Bakery
 Year: 2026
+=======
+**Name:** Esihle Gubula
+
+>>>>>>> 5234cc9a4f01c499b31e905d2d812f3b9bd5a297
