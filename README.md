@@ -488,7 +488,7 @@ Hosting services such as Hostinger and SiteGround were considered when planning 
 - Identified social media promotion opportunities.
 - Documented local SEO strategies for the fictional bakery.
 
-**Live Website:** [Visit Bean & Bite Bakery]( https://esihlegubula.github.io/Bean-and-Bite-Bakery-Website-/
+Live Website:** [Visit Bean & Bite Bakery]( https://esihlegubula.github.io/Bean-and-Bite-Bakery-Website-/
 )
 
 ### Version 2.0 – Part 2
