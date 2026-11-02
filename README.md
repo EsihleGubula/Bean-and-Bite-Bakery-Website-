@@ -325,18 +325,9 @@ SiteGround (2026) *Web Hosting Services and Pricing*. Available at: https://www.
 
 **Name:** Esihle Gubula
 
-### Version 3.0 – Part 3
+Part 2 corrects before Part 3
 
-#### Part 2 Feedback Corrections Implemented:
-- Fixed all broken relative image paths in `gallery.html` (`prepare.jpg`, `customer-coffee.jpg`).
-- Removed spaces from asset filenames to ensure permanent cross-platform loading.
-- Corrected stylesheet link paths from `..//` to `../` on `contact.html` and `products.html`.
-- Implemented CSS `:root` color variables for corporate color scheme compliance.
-- Added a 480px responsive media query breakpoint to stack the home banner elements.
-- Moved `index.html` to the root directory for standard web server routing compatibility.
-**Student Number:** ST10519904
-**Subject Code:** WEDE5020POE
-**Subject:** Introduction to Web Development
-**Project:** Bean & Bite Bakery
-**Phase:** Phase 2
-**Year:** 2026
+- Corrected broken image paths in `gallery.html`.
+- Updated the preparation image path to `../MEDIA/prepare.jpg`.
+- Corrected the customer coffee image path to `../MEDIA/coffee drinking.jpg`.
+- Fixed the customer enjoyment image path to `../MEDIA/customer enjoy.jpg`.
