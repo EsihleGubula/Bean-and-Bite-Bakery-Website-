@@ -337,5 +337,237 @@ if (confirmationItems) {
             finalTotal.toFixed(2);
 
     }
+}
+    // ==========================================
+// GALLERY LIGHTBOX
+// ==========================================
+
+let galleryImages = document.querySelectorAll(".gallery-grid img");
+
+let lightbox = document.getElementById("lightbox");
+
+let lightboxImage = document.getElementById("lightbox-image");
+
+let closeLightbox = document.getElementById("close-lightbox");
+
+if (lightbox && lightboxImage && closeLightbox) {
+
+    galleryImages.forEach(function(image) {
+
+        image.addEventListener("click", function() {
+
+            lightbox.style.display = "flex";
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+        });
+
+    });
+
+    closeLightbox.addEventListener("click", function() {
+
+        lightbox.style.display = "none";
+
+    });
+
+}
+// ==========================================
+// PRODUCT SEARCH
+// ==========================================
+
+let productSearch =
+    document.getElementById("product-search");
+
+let allProducts =
+    document.querySelectorAll(".product-grid article");
+
+if (productSearch) {
+
+    productSearch.addEventListener("input", function() {
+
+        let searchValue =
+            productSearch.value.toLowerCase();
+
+        allProducts.forEach(function(product) {
+
+            let productName =
+                product.querySelector("h3").textContent.toLowerCase();
+
+            if (productName.includes(searchValue)) {
+
+                product.style.display = "";
+
+            } else {
+
+                product.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
+// ==========================================
+// PRODUCT SORTING
+// ==========================================
+
+let productSort =
+    document.getElementById("product-sort");
+
+if (productSort) {
+
+    productSort.addEventListener("change", function() {
+
+        let productGrids =
+            document.querySelectorAll(".product-grid");
+
+        productGrids.forEach(function(grid) {
+
+            let products =
+                Array.from(grid.querySelectorAll("article"));
+
+            products.sort(function(a, b) {
+
+                let priceA =
+                    parseFloat(a.querySelector(".price").textContent.replace("R", ""));
+
+                let priceB =
+                    parseFloat(b.querySelector(".price").textContent.replace("R", ""));
+
+                if (productSort.value === "low-high") {
+                    return priceA - priceB;
+                }
+
+                if (productSort.value === "high-low") {
+                    return priceB - priceA;
+                }
+
+            });
+
+            products.forEach(function(product) {
+                grid.appendChild(product);
+            });
+
+        });
+
+    });
+
+}
+// ==========================================
+// ENQUIRY FORM VALIDATION
+// ==========================================
+
+let enquiryForm = document.getElementById("enquiry-form");
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        let response = document.getElementById("enquiry-response");
+
+        if (!enquiryForm.checkValidity()) {
+            enquiryForm.reportValidity();
+            return;
+        }
+
+        response.textContent = "Sending your enquiry...";
+
+        try {
+
+            let formData = new FormData(enquiryForm);
+
+            let result = await fetch("https://formspree.io/f/xoeeppqo", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (result.ok) {
+
+                response.textContent =
+                    "Thank you! Your enquiry has been sent successfully.";
+
+                enquiryForm.reset();
+
+            } else {
+
+                response.textContent =
+                    "Sorry, your enquiry could not be sent. Please try again.";
+
+            }
+
+        } catch (error) {
+
+            response.textContent =
+                "There was a connection problem. Please try again.";
+
+        }
+
+    });
+
+}
+
+// ==========================================
+// CONTACT FORM VALIDATION
+// ==========================================
+
+let contactForm = document.querySelector("#contact-type")
+    ? document.querySelector("#contact-type").closest("form")
+    : null;
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        let response = document.getElementById("contact-response");
+
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
+
+        response.textContent = "Sending your message...";
+
+        try {
+
+            let formData = new FormData(contactForm);
+
+            let result = await fetch("https://formspree.io/f/xoeeppqo", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (result.ok) {
+
+                response.textContent =
+                    "Thank you! Your message has been sent successfully.";
+
+                contactForm.reset();
+
+            } else {
+
+                response.textContent =
+                    "Sorry, your message could not be sent. Please try again.";
+
+            }
+
+        } catch (error) {
+
+            response.textContent =
+                "There was a connection problem. Please try again.";
+
+        }
+
+    });
 
 }

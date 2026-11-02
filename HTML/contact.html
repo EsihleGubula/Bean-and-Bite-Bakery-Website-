@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us | Bean & Bite Bakery</title>
+    <meta name="description" content="Contact Bean & Bite Bakery for enquiries about our artisan bread, pastries, specialty coffee, orders and bakery services.">
 
-    <link rel="stylesheet" href="..//CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -203,6 +204,17 @@
                     name="email"
                     placeholder="Enter your email address"
                     required>
+                    <label for="contact-type">
+    Type of Message
+</label>
+
+<select id="contact-type" name="contact-type" required>
+    <option value="">Select message type</option>
+    <option value="General Enquiry">General Enquiry</option>
+    <option value="Product Enquiry">Product Enquiry</option>
+    <option value="Order Support">Order Support</option>
+    <option value="Feedback">Feedback</option>
+</select>
 
 
                 <label for="message">
@@ -214,7 +226,8 @@
                     name="message"
                     rows="6"
                     placeholder="Write your message here..."
-                    required></textarea>
+                    required 
+                     minlength="10"></textarea>
 
 
                 <button type="submit">
@@ -222,6 +235,7 @@
                 </button>
 
             </form>
+            <p id="contact-response" aria-live="polite"></p>
 
         </section>
 
@@ -313,7 +327,7 @@
         </p>
 
     </footer>
-
+<script src="../JAVASCRIPT/javascript.js"></script>
 </body>
 
 </html>
